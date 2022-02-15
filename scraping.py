@@ -33,13 +33,6 @@ news_soup = soup(html, 'html.parser')
 
 slide_elem = news_soup.select_one('div.list_text')
 
-# OR
-# slide_elem = news_soup.select_one('div', class_= 'list_text')
-
-
-# Goal: collect the most recent news article along with its summary
-
-
 slide_elem.find('div', class_='content_title')
 
 # Use the parent element to find the title of the 1st listed article and save it as `news_title`
@@ -53,8 +46,6 @@ news_p
 
 
 # 2. Jet Propulsion Labratory's Images Scraping
-
-# Goal: gather the featured images from the Jet Propulsion Laboratory's Space Images webpage
 
 # Visit the target URL (Jet Propulsion Laboratory's Space Images website)
 url = 'https://spaceimages-mars.com'
