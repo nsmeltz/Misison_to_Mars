@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect, url_for
 from flask_pymongo import pymongo
-import scraping
+import Mars_Scraping.scraping as scraping
 
 # Set up Flask
 app = Flask(__name__)
