@@ -25,7 +25,7 @@ def scrape():
    return redirect('/', code=302)
 
 # Update Mongo Database
-.update_one(query_parameter, {"$set": data}, options)
+mars.update_one(query_parameter, {"$set": data}, options)
 
 if __name__ == "__main__":
    app.run()
